@@ -12,22 +12,22 @@ They are categorized into 2 categories - Non-Preemptive and Preemptive.<br/>
     a. the process which arrives first executes first followed by the ones arriving next.<br/>
     b. if multiple processes arrive while a particular process is running, then the process with the least            arrival time exexutes first.<br/>
     c. Pseudocode:<br/>
-         &nbsp; sort the processes in ascending order of arrival time<br/>
-         &nbsp; loop through the arrival time (the counter is the time)<br/>
-         &nbsp; if a particular time is the arrival time of a process<br/>
-         &nbsp;  &nbsp;  &nbsp; print the process' pid, arrival time and time+burst time<br/>
-         &nbsp;  &nbsp;  &nbsp; update time to be time+burst time<br/>
+         &nbsp;  &nbsp; sort the processes in ascending order of arrival time<br/>
+         &nbsp;  &nbsp; loop through the arrival time (the counter is the time)<br/>
+         &nbsp;  &nbsp; if a particular time is the arrival time of a process<br/>
+         &nbsp;  &nbsp;  &nbsp;  &nbsp; print the process' pid, arrival time and time+burst time<br/>
+         &nbsp;  &nbsp;  &nbsp;  &nbsp; update time to be time+burst time<br/>
           
 2. Shortest Job First (SJF)<br/>
     a.process with the least burst time executes first<br/>
     b. Pseudocode:<br/>
-        sort the processes in ascending order of burst time<br/>
-        flag all processes as -1<br/>
-        first print the process arriving first (burst time need not be the least) and flag it as 1<br/>
-        then loop through all the processes (processes are sorted based on burst time)<br/>
-          if a process has arrived and it has not been flagged yet<br/>
-            print the process. pid, current time and time+burst<br/>
-            update time to be time+burst<br/>
+        &nbsp;  &nbsp; sort the processes in ascending order of burst time<br/>
+        &nbsp;  &nbsp; flag all processes as -1<br/>
+        &nbsp;  &nbsp; first print the process arriving first (burst time need not be the least) and flag it as 1<br/>
+        &nbsp;  &nbsp; then loop through all the processes (processes are sorted based on burst time)<br/>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp; if a process has arrived and it has not been flagged yet<br/>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; print the process. pid, current time and time+burst<br/>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;update time to be time+burst<br/>
    
 3. Non-Preemeptive Priority Scheduling <br/>
     a.process with the highest priority executes first till its completion without interruption<br/>
