@@ -15,8 +15,8 @@ They are categorized into 2 categories - Non-Preemptive and Preemptive.<br/>
         sort the processes in ascending order of arrival time<br/>
         loop through the arrival time (the counter is the time)<br/>
         if a particular time is the arrival time of a process<br/>
-          print the process' pid, arrival time and time+burst time<br/>
-          update time to be time+burst time<br/>
+          &nbsp; print the process' pid, arrival time and time+burst time<br/>
+          &nbsp; update time to be time+burst time<br/>
           
 2. Shortest Job First (SJF)<br/>
     a.process with the least burst time executes first<br/>
