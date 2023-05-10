@@ -12,11 +12,11 @@ They are categorized into 2 categories - Non-Preemptive and Preemptive.<br/>
     a. the process which arrives first executes first followed by the ones arriving next.<br/>
     b. if multiple processes arrive while a particular process is running, then the process with the least            arrival time exexutes first.<br/>
     c. Pseudocode:<br/>
-        sort the processes in ascending order of arrival time<br/>
-        loop through the arrival time (the counter is the time)<br/>
-        if a particular time is the arrival time of a process<br/>
-          &nbsp; print the process' pid, arrival time and time+burst time<br/>
-          &nbsp; update time to be time+burst time<br/>
+         &nbsp; sort the processes in ascending order of arrival time<br/>
+         &nbsp; loop through the arrival time (the counter is the time)<br/>
+         &nbsp; if a particular time is the arrival time of a process<br/>
+         &nbsp;  &nbsp; print the process' pid, arrival time and time+burst time<br/>
+         &nbsp;  &nbsp; update time to be time+burst time<br/>
           
 2. Shortest Job First (SJF)<br/>
     a.process with the least burst time executes first<br/>
