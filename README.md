@@ -27,18 +27,18 @@ They are categorized into 2 categories - Non-Preemptive and Preemptive.<br/>
         &nbsp;  &nbsp; then loop through all the processes (processes are sorted based on burst time)<br/>
         &nbsp;  &nbsp;  &nbsp;  &nbsp; if a process has arrived and it has not been flagged yet<br/>
         &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; print the process. pid, current time and time+burst<br/>
-        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;update time to be time+burst<br/>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; update time to be time+burst<br/>
    
 3. Non-Preemeptive Priority Scheduling <br/>
     a.process with the highest priority executes first till its completion without interruption<br/>
     b. Pseudocode:<br/>
-        sort all the processes in ascending order of priority (smaller the number -> higher the priority)<br/>
-        flag all the processes as -1<br/>
-        first print the process arriving first and flag it as 1<br/>
-        then loop through all the processes (processes are sorted based on priority)<br/>
-          if a process has arrived and it has not been flagged yet<br/>
-            print the process' pid, current time, time+burst<br/>
-            update time to be time+burst<br/>
+         &nbsp;  &nbsp; sort all the processes in ascending order of priority (smaller the number -> higher the priority)<br/>
+         &nbsp;  &nbsp; flag all the processes as -1<br/>
+         &nbsp;  &nbsp; first print the process arriving first and flag it as 1<br/>
+         &nbsp;  &nbsp; then loop through all the processes (processes are sorted based on priority)<br/>
+         &nbsp;  &nbsp;  &nbsp;  &nbsp; if a process has arrived and it has not been flagged yet<br/>
+         &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; print the process' pid, current time, time+burst<br/>
+         &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; update time to be time+burst<br/>
         
 # Preemptive Scheduling Algorithms :<br/>
 - It is used when a process switched from running to ready state or waiting to rady state. Basically the execution of one process is interupted for another one to execute.<br/>
